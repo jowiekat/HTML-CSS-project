@@ -1,0 +1,239 @@
+/* GLOBAL STYLES*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* INHERITED STYLES */
+body {
+  font-family: inter, sans-serif;
+  width: 1200px;
+  height: auto;
+  margin: 0 30px;
+  color: #495057;
+}
+/* main - header styling  */
+.main-header {
+  color: #a61e4d;
+  background-color: #f1f3f5;
+  padding: 20px 45px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+h1 {
+  font-size: 26px;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+h1::before {
+  content: "📕";
+  padding-right: 15px;
+  font-size: 28px;
+}
+
+/* Nav-bar styling */
+.nav-bar a {
+  font-size: 18px;
+  color: #a61e4d;
+  text-decoration: none;
+  cursor: pointer;
+}
+nav a:hover {
+  font-size: 18px;
+  color: #1c7ed6;
+  text-decoration: underline;
+  font-weight: bold;
+}
+.nav-bar {
+  display: flex;
+  gap: 30px;
+}
+
+/* ARTICAL SYLING */
+
+h2 {
+  font-size: 40px;
+  color: #a61e4d;
+  margin-bottom: 30px;
+  padding-top: 30px;
+  position: relative;
+  display: inline-block;
+}
+h2::after {
+  content: "TOP";
+  font-size: 18px;
+  font-weight: bold;
+  background-color: yellowgreen;
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 2px;
+  position: absolute;
+  top: 2px;
+  right: -70px;
+}
+/* Author's img styling */
+.Author-image {
+  width: 50px;
+  height: 50px;
+}
+/* Author's paragraph styling */
+.Author {
+  font-size: 16px;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+/* flex styling for author-image & author paragraph */
+.img-author {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+/* post img styling */
+.post-img {
+  margin-bottom: 40px;
+  width: 100%;
+  height: auto;
+}
+/* paragraph styling */
+p {
+  font-size: 22px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+/* mdn anchor styling */
+.mdn-anchor a {
+  color: #a61e4d;
+  text-decoration: none;
+}
+.mdn-anchor a:hover {
+  color: #1c7ed6;
+  text-decoration: underline;
+}
+
+/* styling for all h3 headings */
+h3 {
+  font-size: 30px;
+  color: #a61e4d;
+  margin-bottom: 20px;
+}
+
+/* styling for ordered and unordered lists in <section> */
+.element-ul {
+  list-style: disc;
+}
+.element-ul,
+.ol-list {
+  margin-left: 40px;
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+/* ASIDE ELEMENT STYLING */
+
+aside {
+  background-color: #f1f3f5;
+  border-top: 5px solid #a61e4d;
+  border-bottom: 5px solid #a61e4d;
+  padding: 20px;
+  display: inline-block;
+}
+
+h4 {
+  font-size: 22px;
+  color: #495057;
+  text-transform: uppercase;
+  padding-top: 20px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+/* styling for ordered and unordered lists in <aside> */
+.related-ul {
+  list-style: none;
+}
+.related-ul:last-child {
+  margin-bottom: 60px;
+}
+
+.related-li a {
+  color: #a61e4d;
+  font-weight: bold;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.related-li {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin: 30px;
+  font-size: 17px;
+}
+.related-li p {
+  color: #868e96;
+  font-size: 14px;
+  font-style: italic;
+}
+
+/* BUTTON STYLING & positioning*/
+button {
+  font-size: 20px;
+  padding: 20px 20px;
+  border: #868e96 1px solid;
+  border-radius: 3px;
+  background-color: #fff0f6;
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+}
+
+button:hover {
+  background-color: #faa2c1;
+  font-size: 22px;
+}
+article {
+  position: relative;
+  margin-bottom: 50px;
+}
+/* FOOTER STYLING */
+footer p {
+  color: #868e96;
+  font-size: 16px;
+  border-bottom: 2px solid #a61e4d;
+}
+
+/* FLEXBOX STYLING */
+.flex-container {
+  width: 1200px;
+  display: flex;
+  gap: 40px;
+  align-items: start;
+}
+
+section {
+  display: inline-block;
+  flex: 0 0 825;
+}
+
+aside {
+  flex: 1;
+}
+
+/* .flex-container {
+  display: grid;
+  grid-template-columns: 825px 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+aside {
+  flex: 1;
+} */
