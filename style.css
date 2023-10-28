@@ -21,7 +21,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 40px;
+  margin-bottom: 120px;
 }
 
 h1 {
@@ -49,6 +49,10 @@ nav a:hover {
   text-decoration: underline;
   font-weight: bold;
 }
+
+nav a:active {
+  font-size: 14px;
+}
 .nav-bar {
   display: flex;
   gap: 30px;
@@ -59,7 +63,7 @@ nav a:hover {
 h2 {
   font-size: 40px;
   color: #a61e4d;
-  margin-bottom: 30px;
+  margin-bottom: 60px;
   padding-top: 30px;
   position: relative;
   display: inline-block;
@@ -92,11 +96,11 @@ h2::after {
   display: flex;
   gap: 20px;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 /* post img styling */
 .post-img {
-  margin-bottom: 40px;
+  margin-bottom: 60px;
   width: 100%;
   height: auto;
 }
@@ -104,7 +108,7 @@ h2::after {
 p {
   font-size: 22px;
   line-height: 1.2;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 /* mdn anchor styling */
@@ -121,7 +125,7 @@ p {
 h3 {
   font-size: 30px;
   color: #a61e4d;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 /* styling for ordered and unordered lists in <section> */
@@ -188,7 +192,8 @@ button {
   font-size: 20px;
   padding: 20px 20px;
   border: #868e96 1px solid;
-  border-radius: 3px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
   background-color: #fff0f6;
   position: absolute;
   bottom: 0;
@@ -198,10 +203,11 @@ button {
 button:hover {
   background-color: #faa2c1;
   font-size: 22px;
+  box-shadow: 0 0 32px rgba(0, 0, 0, 0.1);
 }
 article {
   position: relative;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 /* FOOTER STYLING */
 footer p {
